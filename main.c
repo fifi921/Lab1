@@ -36,6 +36,7 @@
 
 int main ( void )
 {
+    char conta;
     /* Initialize all modules */
     SYS_Initialize ( NULL );
 
@@ -43,6 +44,7 @@ int main ( void )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */
         SYS_Tasks ( );
+        conta++;
     }
 
     /* Execution should not come here during normal operation */
